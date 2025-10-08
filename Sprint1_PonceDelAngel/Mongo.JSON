@@ -1,0 +1,21 @@
+db["Restaurantes"].find()
+use Challenge4
+switched to db Challenge4
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('507f191e810c19729de860ea'),
+    '1': ObjectId('507f191e810c19729de860eb'),
+    '2': ObjectId('507f191e810c19729de860ec'),
+    '3': ObjectId('507f191e810c19729de860ed'),
+    '4': ObjectId('507f191e810c19729de860ee')
+  }
+}
+db.Restaurantes.insertMany([
+  { "_id": ObjectId("507f191e810c19729de860ea"), "address": { "building": "8825", "coord": [-73.8803827, 40.7643124], "street": "Astoria Boulevard", "zipcode": "11369" }, "name": "Café Central", "rating": 4.7, "review": "Excelente atención y muy buen café.", "date": "2025-10-07" },
+  { "_id": ObjectId("507f191e810c19729de860eb"), "address": { "building": "2201", "coord": [-73.9851356, 40.758896], "street": "Broadway", "zipcode": "10036" }, "name": "The Burger Spot", "rating": 4.3, "review": "Las hamburguesas son grandes y sabrosas.", "date": "2025-10-06" },
+  { "_id": ObjectId("507f191e810c19729de860ec"), "address": { "building": "150", "coord": [-74.0060152, 40.7127281], "street": "Chambers Street", "zipcode": "10007" }, "name": "Pizza & Co.", "rating": 4.9, "review": "La mejor pizza de la ciudad, sin duda.", "date": "2025-09-30" },
+  { "_id": ObjectId("507f191e810c19729de860ed"), "address": { "building": "4510", "coord": [-73.944158, 40.678178], "street": "Bedford Avenue", "zipcode": "11225" }, "name": "Green Garden", "rating": 4.1, "review": "Opciones vegetarianas y ambiente tranquilo.", "date": "2025-10-05" },
+  { "_id": ObjectId("507f191e810c19729de860ee"), "address": { "building": "990", "coord": [-73.977229, 40.752726], "street": "5th Avenue", "zipcode": "10018" }, "name": "Bakery Delice", "rating": 4.8, "review": "Los pasteles son frescos y deliciosos.", "date": "2025-10-02" }
+])
